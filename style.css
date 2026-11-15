@@ -1,0 +1,89 @@
+
+@font-face {
+    font-family: 'Pricedown';
+    src: url('pricedown.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #00FF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-family: 'Pricedown', sans-serif;
+    font-size: 65px;
+    letter-spacing: 2px;
+    text-shadow:
+        3px 3px 0 #e84393,
+        5px 5px 0 #111;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-unit span {
+    line-height: 1;
+}
+
+.time-unit small {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 1px 2px 2px #111;
+}
+
+.separator {
+    margin-top: -15px;
+    color: #ff75bd;
+}
+
+button {
+    font-family: 'Pricedown', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 28px;
+    color: white;
+    background: #ed3d91;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #111;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff70b5;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 0 #111;
+}
