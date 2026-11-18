@@ -87,3 +87,11 @@ button:active {
     transform: translateY(2px);
     box-shadow: 2px 2px 0 #111;
 }
+#resetBtn {
+    background: #222;
+    border: 2px solid #ff75bd;
+}
+
+#resetBtn:hover {
+    background: #444;
+}

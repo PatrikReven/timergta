@@ -58,3 +58,16 @@ startBtn.addEventListener("click", () => {
 
 updateTimer();
 startBtn.textContent = "START TIMER";
+const resetBtn = document.getElementById("resetBtn");
+
+resetBtn.addEventListener("click", () => {
+    clearInterval(timerInterval);
+
+    elapsedSeconds = 0;
+    running = false;
+
+    updateTimer();
+    saveTimer();
+
+    startBtn.textContent = "START TIMER";
+});
